@@ -4,18 +4,18 @@ Sistema em Python que automatiza  a conferência quantitativa de cartas enviadas
 
 ## Estrutura do projeto
 
+```text
 CONFERENCIA_QUANTITATIVA/
-│
-├── src/               # Código-fonte
-│   ├── core/          # Lógica principal (parsing, scanner, reconcile, models)
-│   └── infra/         # Infraestrutura (CLI, reporter, excel_reader, fs_scanner)
-│
-├── data/              # Arquivos de entrada (ex.: Cartas)
-├── results/           # Saídas geradas (relatórios, logs)
-├── tests/             # Testes automatizados
-├── requirements.txt    # Dependências
-├── README.md           # Documentação
-└── .gitignore         # Arquivos ignorados
+├── src/                 # Código-fonte
+│   ├── core/            # Lógica principal (parsing, scanner, reconcile, models)
+│   ├── infra/           # Infraestrutura (CLI, reporter, excel_reader, fs_scanner)
+│   └── data/            # Arquivos de entrada (ex.: Cartas)
+├── results/             # Saídas geradas (relatórios, logs)
+├── tests/               # Testes automatizados
+├── requirements.txt     # Dependências
+├── README.md            # Documentação
+└── .gitignore           # Arquivos ignorados
+```
 
 ## Padrão de nome das cartas
 
@@ -46,8 +46,8 @@ Cartas fora desse padrão serão indetificadas e listadas como inválidas para a
 ## Saída
 
 O sistema gera:
-
 Relatório no terminal com:
+
     ✅ Cartas válidas
 
     🔁 Cartas duplicadas
