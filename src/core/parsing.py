@@ -1,6 +1,7 @@
 from src.core.models import Carta
 from src.utils import extract_identifiers
 
+
 def parse_files(arquivos: list[str]) -> list[Carta]:
     """Transforma nomes de arquivos em objetos Carta."""
     cartas = []
@@ -20,5 +21,7 @@ def parse_files(arquivos: list[str]) -> list[Carta]:
         if not setor or not codigo:
             continue
 
-        cartas.append(Carta(setor=setor, codigo=codigo, nome_arquivo=nome, origem="pasta"))
+        cartas.append(
+            Carta(setor=setor, codigo=codigo, nome_arquivo=nome, origem="pasta")
+        )
     return cartas

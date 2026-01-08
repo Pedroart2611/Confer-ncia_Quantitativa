@@ -1,6 +1,7 @@
 import os
 from src.utils import extract_identifiers
 
+
 def scan_folder(folder_path):
     duplicates = {}
 
@@ -24,9 +25,7 @@ def scan_folder(folder_path):
         if key not in duplicates:
             duplicates[key] = []
         duplicates[key].append(filename)
- 
+
     print(f"{filename} -> {identifier}")
-
-
 
     return duplicates

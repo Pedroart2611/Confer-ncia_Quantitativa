@@ -4,6 +4,7 @@ from src.core.reconcile import find_duplicates
 from src.core.scanner import scan_folder
 from src.core.parsing import parse_files
 
+
 def main():
     parser = argparse.ArgumentParser(description="Sistema de Conferência Quantitativa")
     parser.add_argument("pasta", help="Caminho da pasta com os arquivos")
@@ -21,6 +22,7 @@ def main():
         print(resultado)
     except Exception as e:
         print(f"Ocorreu um erro inesperado: {e}")
+
 
 if __name__ == "__main__":
     main()

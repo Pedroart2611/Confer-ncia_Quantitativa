@@ -1,6 +1,7 @@
 import os
 import re
 
+
 def extract_identifiers(filename):
     name, _ = os.path.splitext(filename)
 

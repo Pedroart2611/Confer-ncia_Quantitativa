@@ -1,5 +1,6 @@
 import os
 
+
 def scan_folder(folder_path: str) -> list[str]:
     """Retorna a lista de arquivos dentro da pasta."""
     return [

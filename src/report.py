@@ -1,9 +1,9 @@
 from docx import Document
 from datetime import datetime
 
-def generate_report(duplicates, output_path):
 
-    print(f"Gerando relatório em...")
+def generate_report(duplicates, output_path):
+    print("Gerando relatório em...")
     doc = Document()
     doc.add_heading("Relatório de Cartas Duplicadas", level=1)
     doc.add_paragraph(f"Data da Análise: {datetime.now().strftime('%d/%m/Y %H:%M')}")
@@ -14,7 +14,7 @@ def generate_report(duplicates, output_path):
         table = doc.add_table(rows=1, cols=4)
         hdr_cells = table.rows[0].cells
         hdr_cells[0].text = "Setor"
-        hdr_cells[1].text= "Código"
+        hdr_cells[1].text = "Código"
         hdr_cells[2].text = "Quantidade"
         hdr_cells[3].text = "Arquivos"
 
