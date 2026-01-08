@@ -1,8 +1,9 @@
 import argparse
 import os
+
+from src.core.parsing import parse_files
 from src.core.reconcile import find_duplicates
 from src.core.scanner import scan_folder
-from src.core.parsing import parse_files
 
 
 def main():

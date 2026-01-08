@@ -1,5 +1,5 @@
-from src.scanner import scan_folder
 from src.report import generate_report
+from src.scanner import scan_folder
 
 
 def main():

@@ -1,5 +1,6 @@
-from docx import Document
 from datetime import datetime
+
+from docx import Document
 
 
 def generate_report(duplicates, output_path):

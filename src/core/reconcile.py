@@ -1,5 +1,6 @@
 from collections import defaultdict
-from typing import List, Dict, Tuple
+from typing import Dict, List, Tuple
+
 from src.core.models import Carta
 
 
