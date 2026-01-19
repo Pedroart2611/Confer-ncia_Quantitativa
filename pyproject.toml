@@ -1,0 +1,41 @@
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = ["src"]                         
+include_trailing_comma = true
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.poetry]
+name = "cartas-duplicadas"
+version = "0.1.0"
+description = "Sistema para identificar cartas duplicadas na pasta escolhida"
+authors = ["Pedro <pedroart2611@gmail.com>"]
+
+packages = [
+    {include = "core", from = "src"},
+    {include = "infra", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.12.3" 
+python-docx = "^1.1.0"
+
+[tool.poetry.scripts]
+myapp = "infra.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
